@@ -21,7 +21,7 @@
 # Uncomment the below if the DBA steps need to be run separately
 setup_mode=SeparateDBA
 
-PYTHON_COMMAND_INVOKER=python2
+PYTHON_COMMAND_INVOKER=python3
 
 #DB_FLAVOR=MYSQL|ORACLE|POSTGRES|MSSQL|SQLA
 DB_FLAVOR={{ install_properties.DB_FLAVOR }}
@@ -216,6 +216,7 @@ sso_publickey=
 
 # Custom log directory path
 RANGER_ADMIN_LOG_DIR={{ ranger_log_dir }}
+RANGER_ADMIN_LOGBACK_CONF_FILE=
 
 # PID file path
 RANGER_PID_DIR_PATH=/var/run/ranger
